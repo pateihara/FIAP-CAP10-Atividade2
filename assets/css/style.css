@@ -2,66 +2,83 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-
 }
 
+.navbar {
+    background-color: var(--cinza-escuro);
+}
+.nav-link {
+    color: white;
+    letter-spacing: 1px;
+}
 .form-control{
     background-color: transparent;
-    border: 1px solid #ccc;
+    border: 2px solid var(--cinza-claro);
     border-radius: 100px;
-
-
     transition: background-color 0.3s, border-color 0.3s; 
-    color: #fff;
-
+    color: white;
 }
+
 .form-control::placeholder{
-    color: #fff;
+    color: var(--cinza-claro);
     opacity: 50%;
-
 }
-.form-control:hover{
-    background-color: rgba(255, 255, 255, 0.5);
-    outline: 2px solid #FFBA00; 
 
+.form-control:hover{
+    outline: 3px solid var(--amarelo-escuro); 
 }
 
 .form-control:focus{
-    background-color: rgba(255, 255, 255, 0.5);
-    outline: 2px solid #FFBA00; 
+    background-color:transparent;
+    outline: 2px solid var(--amarelo-escuro); 
     box-shadow: none;
-
 }
 
 .btn-primary{
-    background-color: #FFBA00;
+    background-color:var(--amarelo-escuro);
     border-radius: 100px;
-    color: #252525;
+    color: var(--cinza-escuro);
+    border: none;
+}
 
+.btn-primary:hover {
+    background-color: transparent;
+    outline: 3px solid var(--cinza-claro);
 }
 
 .btn-secondary{
-    background-color: #4CAF50;
+    background-color: var(--verde-claro);
     border-radius: 100px;
-    color: #252525;
+    color: var(--cinza-escuro);
+    border: none;
+}
 
+.btn-secondary:hover {
+    background-color: transparent;
+    outline: 3px solid var(--cinza-claro);
 }
 
 .imgBackground{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 20,20, 0.9)),
-     url('../img/mainBanner.png');
+    url('../img/mainBanner.png');
     background-size: cover;
     background-position: center;
     height: 344px;
 }
 
+.game-details-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
 h1{
     font-size: 2.5rem;
     font-weight: 700;
-    color:#fff;
+    color:var(--cinza-claro);
 }
 h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 h3{
@@ -70,7 +87,7 @@ h3{
 }
 h4{
     font-size: 1rem;
-
+    font-weight: 600;
 }
 h6{
     font-size: 0.825rem;
@@ -78,40 +95,86 @@ h6{
 }
 
 .bannerSell{
-    background: linear-gradient(90deg, #1E1A78 0%, #4CAF50 59%, #FFBA00 100%);
+    margin: 5px;
+    background: var(--bg-gradient);
     border-radius: 20px;
-    height: 172px;
 }
 
 .buttonSell{
     height: 55px;
     width: 100%;
+    letter-spacing: 1px;
     border-radius: 100px;
-    background-color: #1E1A78;
-    color:#fff;
-    box-shadow: none;
+    background-color:var(--azul-escuro);
+    color: var(--cinza-claro);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     outline: none;
-    text-decoration: none;
     border:none
 }
 
+.buttonSell:hover {
+    background-color: transparent;
+    outline: 3px solid var(--cinza-claro);
+    letter-spacing: 1px;
+    border: none;
+}
+
 .textSell{
-    color:#fff;
+    color:var(--cinza-claro);
     font-size:2rem;
     font-weight: 700;
 }
 .textBanner{
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--cinza-claro);
 }
 .textHigh{
     margin-top: -13rem;
 }
-@media (max-width: 1400px) { 
-    .textBanner{
-        background-color: rgba(0, 0, 0, 0.5);
 
+.game-info {
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.pcConfig {
+    width: 100%;
+    border-collapse: collapse;
+    letter-spacing: -0.5px;
+}
+
+.pcConfig th {
+    border: 1px solid var(--cinza-medio);
+    padding: 8px;
+    text-align: left;
+}
+
+.pcConfig td {
+    border: 1px solid var(--cinza-medio);
+    padding: 7px;
+    text-align: left;
+}
+
+@media (max-width: 1400px) {
+    .game-first-info{
+        background-color: var(--cinza-escuro) ;
+        padding: 20px;
+        border-radius: 20px;
+        font-weight: 400;
+    }
+    
+    .game-details-info th {
+        background-color: var(--cinza-escuro);
+        text-align: left;
+        color: white;
+    }
+    
+    .game-details-info td {
+        background-color: var(--cinza-escuro);
+        padding: 0.75rem;
+        text-align: left;
+        color: white; 
     }
 }
 
@@ -120,11 +183,33 @@ img{
 }
 
 footer{
-    height: 300px;
-    background-color: #F5F5F5;
+    background-color: var(--cinza-claro);
+    padding: 20px 0;
 }
 
-.logoFooter{
-    width: 200px;
-    height: 85px;
+.footer-nav-list {
+    list-style: none;
+    margin-left: -30px;
+    font-size: 0.9rem;
+}
+footer a {
+    color: var(--cinza-escuro);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--azul-escuro);
+    font-weight: 600;
+}
+
+
+.footer-logo{
+    max-width: 180px; 
+    margin: 0 auto;
+    display: block;
+}
+
+.copyright {
+    text-align: center;
+    color: var(--azul-escuro);
 }
