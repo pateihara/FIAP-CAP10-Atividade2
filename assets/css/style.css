@@ -121,5 +121,10 @@ img{
 
 footer{
     height: 300px;
-    background-color: grey;
+    background-color: #F5F5F5;
+}
+
+.logoFooter{
+    width: 200px;
+    height: 85px;
 }
