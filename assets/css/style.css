@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.form-control{
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+
+
+    transition: background-color 0.3s, border-color 0.3s; 
+    color: #fff;
+
+}
+.form-control::placeholder{
+    color: #fff;
+    opacity: 50%;
+
+}
+.form-control:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    outline: 2px solid #FFBA00; 
+
+}
+
+.form-control:focus{
+    background-color: rgba(255, 255, 255, 0.5);
+    outline: 2px solid #FFBA00; 
+    box-shadow: none;
+
+}
+
+.btn-primary{
+    background-color: #FFBA00;
+    border-radius: 100px;
+    color: #252525;
+
+}
+
+.btn-secondary{
+    background-color: #4CAF50;
+    border-radius: 100px;
+    color: #252525;
+
+}
+
+.imgBackground{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 20,20, 0.9)),
+     url('../img/mainBanner.png');
+    background-size: cover;
+    background-position: center;
+    height: 344px;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:#fff;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+h3{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+h4{
+    font-size: 1rem;
+
+}
+h6{
+    font-size: 0.825rem;
+    font-weight: 200;
+}
+
+.bannerSell{
+    background: linear-gradient(90deg, #1E1A78 0%, #4CAF50 59%, #FFBA00 100%);
+    border-radius: 20px;
+    height: 172px;
+}
+
+.buttonSell{
+    height: 55px;
+    width: 100%;
+    border-radius: 100px;
+    background-color: #1E1A78;
+    color:#fff;
+    box-shadow: none;
+    outline: none;
+    text-decoration: none;
+    border:none
+}
+
+.textSell{
+    color:#fff;
+    font-size:2rem;
+    font-weight: 700;
+}
+.textBanner{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #fff;
+}
+.textHigh{
+    margin-top: -13rem;
+}
+@media (max-width: 1400px) { 
+    .textBanner{
+        background-color: rgba(0, 0, 0, 0.5);
+
+    }
+}
+
+img{
+    width: 100%;
+}
+
+footer{
+    height: 300px;
+    background-color: grey;
+}
