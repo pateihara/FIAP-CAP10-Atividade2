@@ -63,7 +63,8 @@
     url('../img/mainBanner.png');
     background-size: cover;
     background-position: center;
-    height: 344px;
+    height: 380px;
+    
 }
 
 .game-details-info {
