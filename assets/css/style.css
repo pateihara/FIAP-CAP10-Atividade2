@@ -5,7 +5,7 @@
 }
 
 .navbar {
-    background-color: var(--cinza-escuro);
+    background-color: var(--preto);
 }
 .nav-link {
     color: white;
@@ -13,7 +13,7 @@
 }
 .form-control{
     background-color: transparent;
-    border: 2px solid var(--cinza-claro);
+    border: 2px solid var(--cinza-medio);
     border-radius: 100px;
     transition: background-color 0.3s, border-color 0.3s; 
     color: white;
